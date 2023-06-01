@@ -21,5 +21,8 @@ function appendSymbol(symbol) {
       result.value = eval(expression);
     } catch (error) {
       result.value = "Error";
+      setTimeout(function(){
+        result.value="";
+      },500)
     }
   }
